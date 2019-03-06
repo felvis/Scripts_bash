@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#You should use this script in next way -  showmyip.sh aws_profile security_group
+#aws_profile - name of your aws profile from file ~/.aws/credentials
+#security_group - id of specific security group
+
 MYAWS="aws --profile $1"
 
 EXTIP=`dig @resolver1.opendns.com ANY myip.opendns.com +short`
